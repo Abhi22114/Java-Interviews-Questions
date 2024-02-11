@@ -41,7 +41,7 @@
 
 //package q22443;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class DrivingLicenseEligibilityChecker {
 
