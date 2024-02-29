@@ -1,5 +1,6 @@
 
 
+
 Armstrong number
 
 Write a Java program that asks the user to enter the integer N and then determines if that number is an Armstrong number.
