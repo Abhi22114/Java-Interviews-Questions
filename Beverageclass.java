@@ -1,3 +1,4 @@
+
 Create a class Beverage with a method order Beverage() that prints "Ordering a beverage"
 
 Create a subclass Coffee that extends Beverage. Override the orderBeverage() method to prompt the user for input. Ask the user to input the coffee type (String), e.g., latte, cappuccino, and size (String), e.g., Small, Large, Medium, and then print the ordered coffee details.
