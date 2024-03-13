@@ -20,8 +20,28 @@ Enter details for an employee:
 
 Name: John
 
+Employee ID: 101
 
-  import java.util.Scanner;
+Salary: $50000
+
+Enter details for a manager:
+
+Bonus: $ 10000
+
+Employee Details:
+
+Name: John
+
+Employee ID: 101
+Bane Salary: $50000.0
+
+Manager Details:
+
+Bonus: 510000.0
+
+Total Salary: $60000.0
+
+import java.util.Scanner;
 
 class Employee {
     String name;
@@ -70,26 +90,3 @@ public class Main {
         employeeData.displayEmployeeInfo();
     }
 }
-Employee ID: 101
-
-Salary: $50000
-
-Enter details for a manager:
-
-Bonus: $ 10000
-
-Employee Details:
-
-Name: John
-
-Employee ID: 101
-
-Bane Salary: $50000.0
-
-Manager Details:
-
-Bonus: 510000.0
-
-Total Salary: $60000.0
-
-
