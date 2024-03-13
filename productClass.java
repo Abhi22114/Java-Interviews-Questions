@@ -1,5 +1,6 @@
 Mouing vanavie prouucuvame.
 
+    
 • An int variable quantity.
 
 • A method inputProductDetails() that takes user input for the product name.
