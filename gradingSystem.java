@@ -1,6 +1,7 @@
 
 School Grading System
 
+    
 You are developing a grading system for a school.
 
 Create a base class Student with attributes name (string), id (int), and grade (char). Implement a method display Details that prints the student's details.
