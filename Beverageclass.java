@@ -34,8 +34,55 @@ Tea Type: Green Tea
 
 Eweetness Level: Mildly sweet
 
-Test Case 2:
+//Test Case 2:
 
 
 
 
+  
+import java.util.Scanner;
+
+public class BeverageOrder {
+
+    public static void main(String[] args) {
+        Coffee coffee = new Coffee();
+        Tea tea = new Tea();
+
+        coffee.orderBeverage();
+        tea.orderBeverage();
+    }
+}
+
+class Beverage {
+    public void orderBeverage() {
+        System.out.println("Ordering a beverage");
+    }
+}
+
+class Coffee extends Beverage {
+    @Override
+    public void orderBeverage() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Coffee type: ");
+        String coffeeType = input.nextLine();
+        System.out.print("Size of the coffee: ");
+        String size = input.nextLine();
+        System.out.println("\nOrdered Coffee Details:");
+        System.out.println("Coffee Type: " + coffeeType);
+        System.out.println("Size: " + size);
+    }
+}
+
+class Tea extends Beverage {
+    @Override
+    public void orderBeverage() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Tea type: ");
+        String teaType = input.nextLine();
+        System.out.print("Sweetness level: ");
+        String sweetnessLevel = input.nextLine();
+        System.out.println("\nOrdered Tea Details:");
+        System.out.println("Tea Type: " + teaType);
+        System.out.println("Sweetness Level: " + sweetnessLevel);
+    }
+}
