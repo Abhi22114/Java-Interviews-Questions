@@ -2,6 +2,7 @@
 
 Create a class named Parameters representing the dimensions of the rectangle, with the following attributes:
 
+
 • A float variable length.
 
 • A float variable breadth.
