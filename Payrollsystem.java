@@ -20,6 +20,56 @@ Enter details for an employee:
 
 Name: John
 
+
+  import java.util.Scanner;
+
+class Employee {
+    String name;
+    String designation;
+    int yearsOfExperience;
+}
+
+class EmployeeInfo extends Employee {
+    Scanner scanner = new Scanner(System.in);
+    double salaryPerYear;
+
+    public void inputEmployeeDetails() {
+        System.out.print("Enter employee name: ");
+        name = scanner.nextLine();
+        System.out.print("Enter employee designation: ");
+        designation = scanner.nextLine();
+        System.out.print("Enter years of experience: ");
+        yearsOfExperience = scanner.nextInt();
+        System.out.print("Enter salary per year: $");
+        salaryPerYear = scanner.nextDouble();
+    }
+
+    public void displayEmployeeInfo() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Designation: " + designation);
+        System.out.println("Years of Experience: " + yearsOfExperience + " years");
+    }
+
+    public void calculateSalary() {
+        System.out.println("Debugging: Years of experience = " + yearsOfExperience);
+        double baseSalary = 20000; // Base salary set to $20,000
+        if (yearsOfExperience > 0) {
+            double salary = baseSalary + (yearsOfExperience * 1000); // Assuming $1000 raise per year of experience
+            System.out.println("Salary: $" + salary);
+        } else {
+            System.out.println("Invalid years of experience. Salary calculation failed.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        EmployeeInfo employeeData = new EmployeeInfo();
+        employeeData.inputEmployeeDetails();
+        employeeData.calculateSalary();
+        employeeData.displayEmployeeInfo();
+    }
+}
 Employee ID: 101
 
 Salary: $50000
