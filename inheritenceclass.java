@@ -42,3 +42,45 @@ Enter name: Shreya
 
 Name: Shreya
 
+
+  package 923042;
+
+import java.util.Scanner;
+
+public class MainPerson {
+
+    public static void main(String[] args) {
+        Citizen citizen = new Citizen();
+
+        citizen.inputName();
+        citizen.displayName();
+
+        citizen.inputAge();
+        citizen.displayAge();
+    }
+}
+
+class Citizen {
+    private String name;
+    private int age;
+
+    public void inputName() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter name: ");
+        this.name = scanner.nextLine();
+    }
+
+    public void displayName() {
+        System.out.println("Name: " + this.name);
+    }
+
+    public void inputAge() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter age: ");
+        this.age = scanner.nextInt();
+    }
+
+    public void displayAge() {
+        System.out.println("Age: " + this.age);
+    }
+}
