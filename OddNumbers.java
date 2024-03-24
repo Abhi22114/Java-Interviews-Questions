@@ -1,6 +1,7 @@
 //Odd numbers till the given integer
 
 Write a Java program that prompts the user to enter the number N, and prints all the odd numbers till the given integer N.
+    
 
 //-->> Input format:
 
